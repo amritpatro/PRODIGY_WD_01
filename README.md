@@ -1,32 +1,41 @@
-# PRODIGY_WD_01
-Creating an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item is a great way to enhance the user experience on a website. This project involves using HTML to structure the menu, CSS to style it, and JavaScript to add interactivity. Here's a detailed description of the project:
 
-Project Overview
-The goal of this project is to create a visually appealing and interactive navigation menu that remains fixed at the top of the page and is visible on all pages. The menu will change its background color or style when the user scrolls down the page and when the user hovers over a menu item. This provides immediate visual feedback to the user, making the navigation experience more engaging and intuitive.
 
-HTML Structure
-The HTML file will structure the navigation menu and the content of the webpage. It will include a nav element for the navigation bar, an unordered list (ul) for the menu items, and li elements for each menu item. Each menu item will be a hyperlink (a) that links to different sections of the page.
+### Project Overview
+The goal of this project is to create an interactive and visually appealing navigation menu for a website focused on cars. The navigation menu remains fixed at the top of the page and changes its background color when the user scrolls down. This provides immediate visual feedback to the user, making the navigation experience more engaging and intuitive. The project uses HTML to structure the menu, CSS to style it, and JavaScript to add interactivity.
 
-CSS Styling
-The CSS file will style the navigation menu and the content sections. Key styling elements include:
+### HTML Structure
+The HTML file structures the navigation menu and the content of the webpage. It includes:
+- A `header` element with a `nav` element inside it, which contains the navigation bar.
+- An unordered list (`ul`) for the menu items, with each item (`li`) being a hyperlink (`a`) that links to different sections of the page.
+- A `main` element that contains the main content of the page, including sections with headings, paragraphs, and images.
 
-Fixed Position: The navigation menu will have a fixed position at the top of the page, ensuring it remains visible as the user scrolls.
+### CSS Styling
+The CSS file styles the navigation menu and the content sections. Key styling elements include:
+- **Fixed Position**: The navigation menu has a fixed position at the top of the page, ensuring it remains visible as the user scrolls.
+- **Background Color**: The navigation bar has a transparent background that changes to a dark color when the user scrolls down the page.
+- **Hover Effect**: The font color of the menu items changes when the user hovers over them, providing immediate visual feedback.
+- **Responsive Design**: The navigation menu is designed to be responsive, adjusting its layout and appearance based on the screen size and device.
 
-Background Color: The navigation bar will have a gradient background color that changes when the user scrolls down the page.
+### JavaScript Interactivity
+The JavaScript file adds interactivity to the navigation menu. Key functionalities include:
+- **Scroll Event Listener**: The JavaScript code listens for the scroll event and toggles a class on the navigation bar based on the scroll position. This class change triggers the CSS transitions for the background color.
+- **Hover Effect**: The JavaScript code handles the hover effect for the menu items, changing their font color when hovered over.
 
-Hover Effect: The font color of the menu items will change when the user hovers over them, providing immediate visual feedback.
+### Detailed Breakdown
+1. **HTML**:
+   - The `header` element contains the navigation bar (`nav`) with a logo (`div`) and a list of menu items (`ul`).
+   - The `main` element contains sections with headings, paragraphs, and images that provide content about cars.
 
-Box Shadow: A subtle box shadow will be applied to the navigation bar to give it a slight 3D effect and make it stand out from the rest of the content.
+2. **CSS**:
+   - The `body` element is styled with a dark background color and white text.
+   - The `header` element is styled to be fixed at the top of the page with a transparent background that transitions to a dark color when scrolled.
+   - The `nav` element is styled with padding and flexbox properties to align the logo and menu items.
+   - The `ul` element is styled with flexbox properties to space out the menu items.
+   - The `li` elements are styled with hover effects to change the font color when hovered over.
 
-Responsive Design: The navigation menu will be designed to be responsive, adjusting its layout and appearance based on the screen size and device.
+3. **JavaScript**:
+   - The JavaScript code adds an event listener for the scroll event. When the user scrolls down the page, the `navbar` element's class is toggled to add the `scrolled` class, which changes the background color.
+   - The JavaScript code also handles the hover effect for the menu items, changing their font color when hovered over.
 
-JavaScript Interactivity
-The JavaScript file will add interactivity to the navigation menu. Key functionalities include:
-
-Scroll Event Listener: The JavaScript code will listen for the scroll event and toggle a class on the navigation bar based on the scroll position. This class change will trigger the CSS transitions for the background color and box shadow.
-
-Hover Effect: The JavaScript code will handle the hover effect for the menu items, changing their font color when the user hovers over them. 
-
-Conclusion
+### Conclusion
 This project demonstrates how to create an interactive and visually appealing navigation menu using HTML, CSS, and JavaScript. The fixed position of the navigation menu ensures it remains accessible at all times, while the color and style changes provide immediate visual feedback to the user. The responsive design ensures a consistent experience across different devices, making the navigation menu both functional and user-friendly. Feel free to customize the styles and functionality to suit your specific needs and preferences!
-
