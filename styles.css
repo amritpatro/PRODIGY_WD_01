@@ -1,53 +1,108 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(90deg, #4CAF50, #2E8B57);
-    color: white;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: color 0.3s;
-}
-
-.navbar ul li a:hover {
-    color: #FFD700;
-}
-
-.content {
-    padding-top: 60px;
-}
-
-section {
-    padding: 50px;
-    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .scrolled {
-    background: linear-gradient(90deg, #2E8B57, #4CAF50);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #1a202c; /* Tailwind's gray-900 */
+}
+
+.bg-gray-900 {
+    background-color: #121212;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.hover\:text-gray-300:hover {
+    color: #d1d5db;
+}
+
+.transition-colors {
+    transition-property: color;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.pt-20 {
+    padding-top: 5rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.w-full {
+    width: 100%;
 }
