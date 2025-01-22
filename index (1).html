@@ -1,0 +1,80 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Interactive Navigation Menu - Cars
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .scrolled {
+            background-color: #1a202c; /* Tailwind's gray-900 */
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <header class="fixed w-full bg-transparent transition-all duration-300 ease-in-out" id="navbar">
+   <nav class="container mx-auto p-4 flex justify-between items-center">
+    <div class="text-white text-2xl font-bold">
+     CarHub
+    </div>
+    <ul class="flex space-x-6 text-white">
+     <li class="hover:text-gray-300 transition-colors duration-300">
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li class="hover:text-gray-300 transition-colors duration-300">
+      <a href="#">
+       About
+      </a>
+     </li>
+     <li class="hover:text-gray-300 transition-colors duration-300">
+      <a href="#">
+       Models
+      </a>
+     </li>
+     <li class="hover:text-gray-300 transition-colors duration-300">
+      <a href="#">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main class="pt-20">
+   <section class="container mx-auto p-4">
+    <h1 class="text-4xl font-bold mb-4">
+     Welcome to CarHub
+    </h1>
+    <p class="text-lg mb-8">
+     Discover the latest car models, reviews, and news in the automotive world.
+    </p>
+    <img alt="A placeholder image of a sleek modern car in a showroom" class="w-full mb-8" height="400" src="https://storage.googleapis.com/a1aa/image/VRdK161SqiZpI5i41KeiRfzsO9tQcNzwGDFYdg8PSqcefregC.jpg" width="600"/>
+    <p class="text-lg mb-8">
+     At CarHub, we bring you the latest updates from the automotive industry. Whether you're a car enthusiast or just looking for your next vehicle, we have something for everyone. Our team of experts provides in-depth reviews, comparisons, and news on the latest car models, helping you make informed decisions.
+    </p>
+    <img alt="A placeholder image of a classic vintage car on a road" class="w-full mb-8" height="400" src="https://storage.googleapis.com/a1aa/image/VdFNKrQaXp4zINIUVbpfeDgzUCDaxpGXPeVKTFLPWpfofX9gC.jpg" width="600"/>
+    <p class="text-lg mb-8">
+     From classic vintage cars to the latest electric vehicles, CarHub covers it all. Our detailed articles and high-quality images give you a closer look at the cars you love. Stay tuned for our upcoming features on the most anticipated car releases of the year.
+    </p>
+    <img alt="A placeholder image of a futuristic electric car on a city street" class="w-full mb-8" height="400" src="https://storage.googleapis.com/a1aa/image/29xJunTjfWx1NKlye61nRu865wDbUV6u1I9i3pXjOKd8fVPoA.jpg" width="600"/>
+    <p class="text-lg">
+     Join our community of car enthusiasts and stay updated with the latest trends in the automotive world. Whether you're interested in performance, design, or technology, CarHub is your go-to source for all things cars. Explore our website to find detailed reviews, stunning galleries, and the latest news in the automotive industry.
+    </p>
+   </section>
+  </main>
+  <script>
+   window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+  </script>
+ </body>
+</html>
